@@ -1,1 +1,1 @@
-sudo apt-get install ranger caca-utils highlight atool w3m poppler-utils mediainfo
+sudo pacman -S ranger libcaca highlight atool w3m poppler mediainfo
