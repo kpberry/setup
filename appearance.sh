@@ -1,1 +1,2 @@
 ./numix.sh
+./transparent.sh
