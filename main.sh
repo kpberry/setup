@@ -5,6 +5,7 @@
 ./c.sh
 ./java.sh
 ./docker.sh
+./chrome.sh
 ./code.sh
 ./pycharm.sh
 ./zsh.sh
