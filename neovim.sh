@@ -1,9 +1,10 @@
-sudo add-apt-repository ppa:neovim-ppa/stable
-sudo apt-get update
-sudo apt-get install neovim
-sudo pip3 install pynvim
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sudo pacman -S neovim python-neovim
+sudo ln -s /usr/bin/vim /usr/bin/nvim
 mkdir -p ~/.config/nvim/
 cp init.vim ~/.config/nvim/init.vim
+
+git clone https://aur.archlinux.org/neovim-plug.git /tmp/neovim-plug
+cd /tmp/neovim-plug
+makepkg -si
+cd -
 vim +PlugInstall +qall
